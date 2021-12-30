@@ -3,8 +3,6 @@ import { Spin } from 'antd';
 import { connect } from 'dva';
 import styles from './index.less';
 
-// @connect
-
 interface Iprops {
   /** 名称 */
   name?: string;
@@ -31,11 +29,3 @@ const Deatil: FC<DetailProps> = props => {
   );
 };
 export default connect(mapStateToProps)(Deatil);
-// export default () => {
-//   return (
-//     <div className={styles.detail}>
-//       <h1 className={styles.title}>detail</h1>
-//       {/* <Spin spinning/> */}
-//     </div>
-//   );
-// };
