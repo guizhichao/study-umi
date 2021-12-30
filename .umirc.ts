@@ -64,9 +64,12 @@ export default defineConfig({
   // /** 用于提供给代码中可用的变量 */
   define: {},
   /** 外链 */
-  // externals: {
-  //   react: 'window.React',
-  // },
+  externals: {
+    // react: 'window.React',
+  },
+  theme: {
+    '@primary-color': 'red',
+  },
   /** 设置哪些模块可以不被打包，通过 <script> 或其他方式引入，通常需要和 scripts 或 headScripts 配置同时使用 */
   scripts: ['https://unpkg.com/react@17.0.1/umd/react.production.min.js'],
 } as IConfig);
